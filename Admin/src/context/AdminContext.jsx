@@ -13,6 +13,7 @@ const AdminContext = ({children}) => {
 
      let result = await axios.get(serverUrl + "/api/user/getadmin",{withCredentials:true})
 
+    await getAdmin()
     setAdminData(result.data)
     console.log(result.data)
 
@@ -24,7 +25,7 @@ const AdminContext = ({children}) => {
     }
   }
     useEffect(()=>{
-      getAdmin()
+      // getAdmin()
     },[])
    
 
