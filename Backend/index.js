@@ -20,9 +20,7 @@ app.use(cors(
     }
 ))
 
-app.get("/", (req, res) => {
-  res.send("Backend is working 🚀");
-});
+
 
 
 app.use("/api/auth",authRoutes)
