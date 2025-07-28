@@ -11,7 +11,7 @@ const AdminContext = ({children}) => {
   const getAdmin = async()=>{
     try {
 
-     let result = await axios.get(serverUrl + "/api/user/getadmin",{withCredentials:true})
+     let result = await axios.get(serverUrl + "/api/user/getadmin",{ withCredentials: true})
 
  
     setAdminData(result.data)
