@@ -114,8 +114,7 @@ export const adminLogin = async (req, res) => {
                 maxAge: 7 * 24 * 60 * 60 * 1000
             })
             return res.status(200).json(token)
-            return res.status(200).json(sameSite)
-            return res.status(200).json(secure)
+   
             
         }
             return res.status(400).json({message:"Invalid Cradentials"})
