@@ -9,8 +9,10 @@ const AdminContext = ({children}) => {
 
 
   const getAdmin = async()=>{
+
+    const axios.defaults.withCredentials = true;
     try {
-       const axios.defaults.withCredentials = true;
+      
 
      let result = await axios.get(serverUrl + "/api/user/getadmin",{ withCredentials: true})
 
