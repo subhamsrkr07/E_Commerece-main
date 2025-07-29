@@ -9,8 +9,6 @@ const AdminContext = ({children}) => {
 
 
   const getAdmin = async()=>{
-
-    const axios.defaults.withCredentials = true;
     try {
       
 
