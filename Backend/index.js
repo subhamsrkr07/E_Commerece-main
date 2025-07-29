@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors(
     {
-        origin:["e-commerece-main-d8yt.vercel.app","e-commerece-main.vercel.app"],
+        origin:"e-commerece-main-d8yt.vercel.app",
         credentials:true
     }
 ))
