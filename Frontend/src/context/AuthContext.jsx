@@ -6,7 +6,7 @@ const AuthContext = ({children}) => {
 let serverUrl="https://e-commerece-main-backend-gegv.onrender.com"
 
 let value = {
-    serverUrl
+    serverUrl,credentials:true
 }
 
   return (
