@@ -16,7 +16,7 @@ app.use(cookieParser())
 app.use(cors(
     {
         origin:["https://e-commerece-main-frontend.onrender.com","https://e-commerece-main-admin.onrender.com"],
-        [credentials:true]
+        credentials:true
     }
 ))
 
