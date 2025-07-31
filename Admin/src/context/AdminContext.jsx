@@ -16,7 +16,7 @@ const AdminContext = ({children}) => {
 
  
     setAdminData(result.data)
-    // console.log(result.data)
+    console.log(result.data)
 
   }
       
