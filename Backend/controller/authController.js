@@ -113,7 +113,7 @@ export const adminLogin = async (req, res) => {
                 sameSite: "None",
                 maxAge: 1 * 24 * 60 * 60 * 1000
             })
-            return res.status(200).json(token)
+            return res.cookies("token",token)
         }
             return res.status(400).json({message:"Invalid Cradentials"})
     } catch (error) {
