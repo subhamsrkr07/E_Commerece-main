@@ -34,6 +34,8 @@ const Nav = () => {
 
 
   return (
+    console.log("userData:", userData);
+
     <div className='w-[100vw] h-[70px] bg-[#00809D] 
     z-10 fixed top-0 flex items-center justify-between px-[30px] 
     shadow-md shadow-black'>
