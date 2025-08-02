@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken'
 const adminAuth = async (req, res, next) => {
     try {
         let  {token}  = req.cookies
-        console.log(req.cookies)
+        // console.log(req.cookies)
 
         if (!token) {
             return res.status(400).json({ message: "user does not token for Admin_pannel" })
