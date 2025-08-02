@@ -58,7 +58,7 @@ const Nav = () => {
            {showSearch && <IoSearchCircleOutline className='w-[40px] h-[40px] text-[#000000] cursor-pointer' onClick={() => {setShowSearch(prev => !prev)}} />}
 
         {!userData && <CgProfile className='w-[30px] h-[30px] text-[#000000] cursor-pointer'  onClick={() => setprofile(prev => !prev)}/>}
-        {userData && <div className='w-[30px] h-[30px] bg-[#080808] text-[white] rounded-full 
+        {userData?.name && <div className='w-[30px] h-[30px] bg-[#080808] text-[white] rounded-full 
           flex items-center justify-center cursor-pointer' onClick={() => setprofile(prev => !prev)}>
           {userData?.name.slice(0, 1)}
         </div>}
