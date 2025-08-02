@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors(
     {
-        origin:["https://unrivaled-klepon-389ae7.netlify.app/","https://e-commerece-main-frontend.onrender.com"],
+        origin:["https://e-commerece-main-admin.onrender.com","https://e-commerece-main-frontend.onrender.com"],
         credentials:true
     }
 ))
